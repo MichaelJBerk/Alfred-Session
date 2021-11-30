@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.mibe.session</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>138EAEAD-99D0-49F6-A3C2-BA6906226AE5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8EDC1C63-FDA3-4AA2-8EC3-2ADF893DDC87</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>15C79442-7E14-4C97-8007-A69EC6AAC15C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FC9FF43B-B1D0-4647-A39E-529DB838F858</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>32A135AC-1E61-4FD1-8815-F2AA4A16AD56</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9F2B2362-7752-4592-AFE0-ED10E9441A3B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>40C69836-A12C-41BE-81CA-79C10B2C49A8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>47232C60-C565-4136-A87F-763AE4EC76F7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>47232C60-C565-4136-A87F-763AE4EC76F7</key>
+		<array/>
+		<key>5C537BA8-DE09-4839-ABD5-68878E0BD15B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>06D812DB-2AC6-46C2-9A88-FA9BECD6F051</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8BA3B3CF-54AE-44F3-8E7A-9C9A565058D7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B6AF07D-D49E-4741-9C51-DA57C0A9197A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8E1AC268-5C42-45F7-9EEE-33AA16C86399</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>47232C60-C565-4136-A87F-763AE4EC76F7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8EDC1C63-FDA3-4AA2-8EC3-2ADF893DDC87</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>40C69836-A12C-41BE-81CA-79C10B2C49A8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EE886CD0-5113-4B02-A2AB-9555AEB72F1E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B5DE12E-78CE-4147-AE99-F7F6D6A3D68C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FC9FF43B-B1D0-4647-A39E-529DB838F858</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8E1AC268-5C42-45F7-9EEE-33AA16C86399</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Michael Berk</string>
+	<key>description</key>
+	<string>Automate Session with Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Session</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+
+url = 'start?categoryName=' + sys.argv[1]
+sys.stdout.write(url)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>40C69836-A12C-41BE-81CA-79C10B2C49A8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>session start</string>
+				<key>subtext</key>
+				<string>Session with category {query}</string>
+				<key>text</key>
+				<string>New Session</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>138EAEAD-99D0-49F6-A3C2-BA6906226AE5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>intent</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>8EDC1C63-FDA3-4AA2-8EC3-2ADF893DDC87</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>session:///{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>47232C60-C565-4136-A87F-763AE4EC76F7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+
+url = 'start?categoryId=' + sys.argv[1]
+sys.stdout.write(url)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8E1AC268-5C42-45F7-9EEE-33AA16C86399</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>session start</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>import json
+import os
+import sys
+#from pathlib import path
+from os.path import expanduser
+userpath = os.path.expanduser('~')
+filepath = userpath + '/Library/Containers/com.philipyoungg.session-setapp/Data/Library/Application Support/com.philipyoungg.session-setapp/Default/Projects'
+#print(filepath)
+size = os.path.getsize(filepath)
+#print(size)
+f = open(filepath, 'r')
+filecontent = f.read(size)
+projects = json.loads(filecontent)
+rProjects = []
+for p in projects:
+	title = p['title']
+	id = p['id'],
+	x = {
+		"uid": id,
+		"title": title,
+		"match": title,
+		"arg": id,
+		"subtitle": 'Start Session with category "' + title + '"',
+		"autocomplete": title,
+	}
+	rProjects.append(x)
+#	sys.stdout.write(p['title'] + "\n")
+items = {
+	"items": rProjects
+}
+sys.stdout.write(json.dumps(items))
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>15C79442-7E14-4C97-8007-A69EC6AAC15C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>intent</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>FC9FF43B-B1D0-4647-A39E-529DB838F858</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>session:///start-previous</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6B5DE12E-78CE-4147-AE99-F7F6D6A3D68C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>session start previous</string>
+				<key>subtext</key>
+				<string>Start previous session with your last intent</string>
+				<key>text</key>
+				<string>Start Previous Session</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>EE886CD0-5113-4B02-A2AB-9555AEB72F1E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>session pause</string>
+				<key>subtext</key>
+				<string>Toggle pause. Only works while Session is running.
+Toggle pause. Only works while Session is running.
+
+Pause/Unpause the current Session. Only works while Session is running.</string>
+				<key>text</key>
+				<string>Toggle Pause</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5C537BA8-DE09-4839-ABD5-68878E0BD15B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>session:///pause</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>06D812DB-2AC6-46C2-9A88-FA9BECD6F051</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>session:///finish</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6B6AF07D-D49E-4741-9C51-DA57C0A9197A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>session finish</string>
+				<key>subtext</key>
+				<string>Finish Session. Only works while Session is running.</string>
+				<key>text</key>
+				<string>Finish Session</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8BA3B3CF-54AE-44F3-8E7A-9C9A565058D7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>session:///abandon</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9F2B2362-7752-4592-AFE0-ED10E9441A3B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>session abandon</string>
+				<key>subtext</key>
+				<string>Abandon session / stop rest / stop working.
+
+Abandon session / stop rest / stop working.
+
+Abandon session / stop rest / stop working.
+
+Abandon session / stop rest / stop working.
+
+Abandon session / stop rest / stop working.</string>
+				<key>text</key>
+				<string>Abandon Session/Rest</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>32A135AC-1E61-4FD1-8815-F2AA4A16AD56</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>06D812DB-2AC6-46C2-9A88-FA9BECD6F051</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>535</integer>
+		</dict>
+		<key>138EAEAD-99D0-49F6-A3C2-BA6906226AE5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>75</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
+		<key>15C79442-7E14-4C97-8007-A69EC6AAC15C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>75</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>32A135AC-1E61-4FD1-8815-F2AA4A16AD56</key>
+		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>775</integer>
+		</dict>
+		<key>40C69836-A12C-41BE-81CA-79C10B2C49A8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>135</integer>
+		</dict>
+		<key>47232C60-C565-4136-A87F-763AE4EC76F7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>185</integer>
+		</dict>
+		<key>5C537BA8-DE09-4839-ABD5-68878E0BD15B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>535</integer>
+		</dict>
+		<key>6B5DE12E-78CE-4147-AE99-F7F6D6A3D68C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
+		<key>6B6AF07D-D49E-4741-9C51-DA57C0A9197A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>655</integer>
+		</dict>
+		<key>8BA3B3CF-54AE-44F3-8E7A-9C9A565058D7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>655</integer>
+		</dict>
+		<key>8E1AC268-5C42-45F7-9EEE-33AA16C86399</key>
+		<dict>
+			<key>xpos</key>
+			<integer>385</integer>
+			<key>ypos</key>
+			<integer>260</integer>
+		</dict>
+		<key>8EDC1C63-FDA3-4AA2-8EC3-2ADF893DDC87</key>
+		<dict>
+			<key>xpos</key>
+			<integer>235</integer>
+			<key>ypos</key>
+			<integer>175</integer>
+		</dict>
+		<key>9F2B2362-7752-4592-AFE0-ED10E9441A3B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>770</integer>
+		</dict>
+		<key>EE886CD0-5113-4B02-A2AB-9555AEB72F1E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
+		<key>FC9FF43B-B1D0-4647-A39E-529DB838F858</key>
+		<dict>
+			<key>xpos</key>
+			<integer>235</integer>
+			<key>ypos</key>
+			<integer>300</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/MichaelJBerk/Alfred-Session</string>
+</dict>
+</plist>
