@@ -154,6 +154,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>session start</string>
+				<key>subtext</key>
+				<string>Session with category {query}</string>
+				<key>text</key>
+				<string>New Session</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>138EAEAD-99D0-49F6-A3C2-BA6906226AE5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -176,27 +197,6 @@ sys.stdout.write(url)</string>
 			<string>40C69836-A12C-41BE-81CA-79C10B2C49A8</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>session start</string>
-				<key>subtext</key>
-				<string>Session with category {query}</string>
-				<key>text</key>
-				<string>New Session</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>138EAEAD-99D0-49F6-A3C2-BA6906226AE5</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -275,7 +275,7 @@ sys.stdout.write(url)</string>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>keyword</key>
@@ -334,7 +334,7 @@ sys.stdout.write(json.dumps(items))
 				<key>type</key>
 				<integer>3</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -536,7 +536,26 @@ Abandon session / stop rest / stop working.</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># Alfred-Session
+Alfred Workflow to control Session
+
+## Features
+
+- Start new Session
+- Start new Session with previous settings
+- Toggle Pause
+- Finish Session
+- Abandon Session/Rest
+
+## Commands
+- `session start` (without arguments) will list the categories you have set up in Session. 
+- `session start {category}` will create and use the specified category.
+- `session pause` pauses/unpauses the session
+- `session finish` finishes the session
+- `session abandon` finishes the session/rest
+
+## Installation
+Download the latest release, and double-click it to open it in Alfred and install it.</string>
 	<key>uidata</key>
 	<dict>
 		<key>06D812DB-2AC6-46C2-9A88-FA9BECD6F051</key>
@@ -551,7 +570,7 @@ Abandon session / stop rest / stop working.</string>
 			<key>xpos</key>
 			<integer>75</integer>
 			<key>ypos</key>
-			<integer>145</integer>
+			<integer>120</integer>
 		</dict>
 		<key>15C79442-7E14-4C97-8007-A69EC6AAC15C</key>
 		<dict>
@@ -619,9 +638,9 @@ Abandon session / stop rest / stop working.</string>
 		<key>8EDC1C63-FDA3-4AA2-8EC3-2ADF893DDC87</key>
 		<dict>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>255</integer>
 			<key>ypos</key>
-			<integer>175</integer>
+			<integer>150</integer>
 		</dict>
 		<key>9F2B2362-7752-4592-AFE0-ED10E9441A3B</key>
 		<dict>
@@ -648,7 +667,7 @@ Abandon session / stop rest / stop working.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/MichaelJBerk/Alfred-Session</string>
 </dict>
