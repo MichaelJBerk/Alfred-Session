@@ -178,18 +178,20 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string>import sys
+				<string>#!/usr/local/bin/python3
+
+import sys
 
 url = 'start?categoryName=' + sys.argv[1]
 sys.stdout.write(url)</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>categoryName.sh</string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -243,18 +245,20 @@ sys.stdout.write(url)</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string>import sys
+				<string>#!/usr/local/bin/python3
+
+import sys
 
 url = 'start?categoryId=' + sys.argv[1]
 sys.stdout.write(url)</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>categoryID.sh</string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -667,7 +671,7 @@ Download the latest release, and double-click it to open it in Alfred and instal
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/MichaelJBerk/Alfred-Session</string>
 </dict>
